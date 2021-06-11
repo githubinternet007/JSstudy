@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var gender = prompt("성별을 입력하세요.", "여성");
+        var age = prompt("나이를 입력하세요.", 20);
+        var rslt;
+
+        rslt = (age < 30) && (age >= 20) && (gender === "여성");
+        //  rslt = (20 =< age < 30) && (gender === "여성");
+        //  이거 에러난다. 검토할 것. 이렇게 붙여쓰면 에러난다. 다른 언어에서도 그렇다고 한다.
+        
+        document.write("결과 : " + rslt + '<br>');
+    </script>
+
+</body>
+
+</html>

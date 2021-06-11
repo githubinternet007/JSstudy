@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업10자스02이론04:변수값 교환하기</title>
+</head>
+
+<body>
+    <h2>★★변수값교환</h2>
+    <!-- 변수값 교환 이론은 변수를 실무에서 활용하는데 매우 중요한 기법이다.  -->
+    <script>
+
+        var x = 1;
+        var y = 9;
+        
+        var temp; 
+        // temp는 임시저장소이다. 
+        // 힌트 : 변수를 교환할 때는 임시 저장 변수를 선언하고 거기에 기존의 변수를 옮긴다. 
+
+        // 기존의 변수 확인
+        document.write("교환 전<br>");
+        document.write("x = " + x);
+        document.write(", y = " + y);
+        document.write("<br><br>");
+
+        // 변수 교환 처리
+        temp = x;
+        x = y;
+        y = temp;
+
+        document.write("교환 후<br>");
+        document.write("x = " + x);
+        document.write(", y = " + y);
+    </script>
+
+</body>
+
+</html>

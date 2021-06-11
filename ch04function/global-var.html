@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수의 유효범위</title>
+</head>
+
+<body>
+    <h2>전역변수의 유효범위</h2>
+    <script>
+        // 함수블럭 밖에서 변수 설정. 전역변수가 된다. 
+        var x = 1;
+
+        function oneUp() {
+            x += 1
+            return x;
+        }
+
+        var num = oneUp(); // 여기까지는 2를 저장하고 있다.
+        num = oneUp(); // 한 번더 함수를 호출하면 다시 계산되니까 1이 더하여져 3이 저장된 상태다. 
+        document.write("num = " + num + '<br>');
+        document.write("x = " + x); // 단 여기서는 1이 출력될 것 같은데 웹에서 3이 출력되었다.
+        // 첫번째 두번째 출력요청에서 모두 값이 출력된다. 
+        // 전역변수를 선언하면 메모리 내에 계속 생존하여 프로그램이 종료되기 전까지 값을 저장하고 있다.
+    </script>
+
+</body>
+
+</html>

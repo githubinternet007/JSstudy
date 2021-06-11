@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업10일자스02일이론11:홀수 짝수 판별</title>
+</head>
+
+<body>
+    <h2>홀수짝수 판별기</h2>
+    <script>
+        var value = prompt("숫자를 입력하세요.");
+        // null값 처리까지 최상위 조건식에 넣어준다.   
+        if (value !== null) {
+
+            if (value % 2 === 0) {
+                // document.write("짝수입니다.")
+                alert("짝수입니다.")
+
+            } else {
+                document.write("홀수입니다.")
+            }
+
+        } else {
+            document.write("입력이 취소되었습니다.");
+        }
+        // 위처럼 하지않고 아래처럼 간단하게 연산자를 이용하여 조건문의 형식을 구현할 수 있다. 
+        // var result = (value % 2 === 0) ? "짝수입니다." : "홀수입니다.";
+    </script>
+</body>
+</html>

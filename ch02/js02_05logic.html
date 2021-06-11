@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업10일자스02일이론05:논리연산자활용</title>
+</head>
+<body>
+    <h2>논리 연산자 &&, ||, !</h2>
+    <script>
+        var n1 = 10, n2 = 5;
+        var rslt;
+
+        rslt = (n1 >= n2) && (n1 === n2);
+        // 둘다 모두 참이어야 참반환.  false 가 나온다.
+        console.log(rslt) 
+        
+        rslt = (n1 >= n2) || (n1 === n2);
+        // 하나만 참이면 참 반환. true가 나온다.
+        console.log(rslt) 
+        
+        rslt = !(n1 >= n2);
+        // 연산결과가 참이면 거짓 반환. 거짓이면 참 반환. false가 나온다.
+        console.log(rslt) 
+         
+    </script>
+    
+</body>
+</html>

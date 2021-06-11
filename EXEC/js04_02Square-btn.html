@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자스04일연습문제02:리턴값 있는 함수-id 선언된 태그에 요소로 넣어서 출력</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button,
+        p {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="square(4)">계산하기</button>
+    <p id="demo1"></p>
+
+    <script>
+        var square = function (x) {
+        // var square = function (x);{ 이처럼 함수 선언할 때 세미콜론 넣지 않도록 주의. 문법에러 뜬다.!!
+            var num = x * x;
+            document.getElementById("demo1").innerHTML = num;
+            // 웹화면에 출력하는데 id선언된 곳에 넣어서 출력하겠다는 속성부여
+            // 실무에서 자주 활용하는 함수 기법
+        }
+    </script>
+
+</body>
+
+</html>

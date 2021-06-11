@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문while02</title>
+</head>
+
+<body>
+    <h2>자연수 1 to 10까지 출력</h2>
+    <script>
+        var n = 1;
+        while (true) {
+            document.write(n + "<br>")
+            n += 1;
+            // 여기까지 하면 true 설정으로 무한반복된다. 
+            if (n > 100) {
+                break;
+            }
+            // true - break 구문을 넣어 일정 조건을 넘어서면 반복을 중단시킨다. 실무 자주 활용한다.
+            // while(true)-if break 구문 
+        }
+    </script>
+</body>
+
+</html>

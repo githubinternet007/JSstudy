@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업11일자스03일이론10:for구구단출력02</title>
+</head>
+
+<body>
+    <h2>구구단 출력</h2>
+    
+    
+    <script>
+        var i;
+        // 변하는 값을 변수로 정한다. 
+        var n = parseInt(prompt("구구단의 앞단을 입력하세요."));
+
+        // 숫자 오류 처리 - isNan()함수 사용
+        // null - 유효하지 않은 데이터(문자, 객체 등) 
+
+        if (isNaN(n)) {
+            document.write("입력이 취소되었습니다.");
+
+        } else {
+            for (i = 1; i < 10; i++) {
+                document.write(n + " X " + i + " = " + (n * i) + "<br>");
+            }
+        }
+
+        // 문자, 객체 등이 입력 되었을 때 오류 처리 방법이 약간 난이도가 높다. isNan() 함수에 대해서 연구요망.
+    </script>
+
+</body>
+
+</html>

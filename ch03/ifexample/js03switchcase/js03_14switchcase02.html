@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업11일자스03이론14:조건문switch02</title>
+<style>
+    body{
+        background-color: #0000ff;
+        color: #ffff;
+        margin-top: 80px;
+    }
+    p {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    strong {
+        /* font-size: 2em; */
+        color: lightpink
+    }
+</style>
+
+</head>
+
+<body>
+    
+    <script>
+        var session = prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인");
+
+        switch(session){
+            case "1":
+            document.write("<p>마케팅 세션은 <strong>201호</strong>에서 진행됩니다.</p>");
+            break;
+            
+            case "2":
+            document.write("<p>마케팅 세션은 <strong>202호</strong>에서 진행됩니다.</p>");
+            break;
+            
+            case "3":
+            document.write("<p>마케팅 세션은 <strong>203호</strong>에서 진행됩니다.</p>");
+            break;
+
+            default :
+            document.write("<p>잘못 입력하셨습니다.</p>");
+
+            // 주의) 여기서 case 1: 이렇게 선언하면 에러 뜬다.
+            // switch구문에서 default 값의 의미가 마치 null 처리와 비슷하다. 
+        }
+    </script>
+
+</body>
+
+</html>

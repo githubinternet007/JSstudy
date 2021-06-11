@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리턴값 있는 함수 선언</title>
+</head>
+
+<body>
+    <h2>03.리턴값 있는 함수</h2>
+    <script>
+        // 리턴(인수)값 없는 함수. 이것은 거의 쓰지 않는다.
+        
+        function addNum() {
+            var x = 10;
+            var y = 20;
+            document.write("결과1 : " + (x + y) + "<br>");
+        }
+        addNum();
+
+        // 리턴값 있는 함수
+        function addNum2(x, y) {
+            return x + y;
+        }
+        var result = addNum2(10, 30);
+        document.write("결과2 : " + result + "<br>");
+    
+    </script>
+</body>
+
+</html>

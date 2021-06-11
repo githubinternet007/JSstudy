@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업11일자스03일03:while누적합03</title>
+</head>
+
+<body>
+    <h2>자연수 1 to 10까지 누적합</h2>
+    <script>
+        var n = 1;
+        var sum = 0;
+        // 여기서 sum에 초기값 0을 대입하지 말고 실행해 볼 것. 결과가 이상하다. 이유가 뭔가?
+        while (n < 11) {
+            // sum = sum + n;
+            sum += n;
+            n += 1; 
+        }
+        document.write("합계는 " + sum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업11일자스03일이론08:for_factorial</title>
+</head>
+
+<body>
+    <h2>자연수 1 to 10까지 누적곱factorial</h2>
+    <script>
+        var n = parseInt(prompt("숫자를 입력하세요."));
+        var reslt = 1;
+// 누적곱에서는 초기값을 0으로 설정하면 안된다. 
+        
+if(n !== null) {
+    for (i = 1; i <= n; i++) {         
+            reslt = reslt*i;
+        }
+        document.write("누적곱은 " + reslt);
+
+}else{
+    document.write("입력이 취소되었습니다.");
+}
+
+    </script>
+</body>
+
+</html>
