@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자스05일연습02:변수전역지역</title>
+    <style>
+        #wrap {
+            width: 600px;
+            margin:0px auto;
+            text-align: center;
+        }
+
+        body {
+            width: 600px;
+            margin: 0 auto;
+        }
+                
+        p{
+            font-weight: 600;
+        }
+
+        /* 여기서 마지막 3의 배수를 보여주면서 끝에 쉼표를 안보이게 하는 방법은? */
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h2>3의 배수 찾기 & 범위 내 3의 개수</h2>
+        <script>
+            var court = 0;
+            // 함수 밖에서 전역변수로 선언. 그러면 court값이 누적된다. 
+            // 만약 변수를 함수 안에 선언하면 누적값이 나오지 않는다.  
+            for (var i = 1; i <= 100; i++) {
+                if (i % 3 === 0) {
+                    document.write(i + ",&nbsp");
+                    court += 1;
+                }
+            }
+            document.write("<br><p>3의 배수의 개수 : " + court + "</p>");
+        </script>
+    </div>
+
+</body>
+
+</html>

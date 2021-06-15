@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자스04일이론06:롤링갤러리</title>
+
+    <style>
+        #container {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        img {
+            vertical-align: middle;
+            margin: 20px;
+        }
+    </style>}
+</head>
+
+<body>
+    <div id="container">
+        <h2>롤링 갤러리</h2>
+        <a href="#" onclick="preGall()"><img src="images/left_btn.png" alt=""></a>
+        <a href="#"><img src="images/img1.jpg" alt="새사진" id="gallery"></a>
+        <a href="#" onclick="nextGall()"><img src="images/right_btn.png" alt=""></a>
+    </div>
+
+    <script>
+        // 화살표 누르면 좌우로 넘어가는 동적 이미지 구현
+        var num = 1;
+        // num은 전역변수로 선언했다. 만약 지역변수로 선언되면?
+        // num에 값이 누적되지 않는다. 
+        function nextGall() {
+            // var num = 1;
+            num += 1;
+            if(num>7) {
+                num = 1;
+            }
+            document.getElementById('gallery').src = "images/img" + num + ".jpg";
+        }
+
+        function preGall() {
+            num -= 1;
+            if(num <1){
+                num = 7;
+            }
+            document.getElementById('gallery').src = "images/img" + num + ".jpg";
+        }
+    </script>
+</body>
+</html>

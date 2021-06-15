@@ -1,0 +1,5 @@
+#item {    margin: 0 auto;    width: 500px;    position: relative;}
+
+.over {    position: absolute;    left: 20px;    top: 260px;}
+
+.text {    width: 400px;    display: none;}

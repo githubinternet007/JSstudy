@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자스05일이론01:이벤트다루기</title>
+</head>
+<body>
+    <h1 onclick="changeText()" id="switch">Click on this Text!!</h1>
+    <script>
+        function changeText() {
+            // text 내용 변경
+            // document.getElementById("switch").innerHTML = "Good!!";
+
+            // 글자 색상 변경
+            document.getElementById("switch").innerHTML = "Good!!";
+            // 그러면 텍스트 내용을 변경하면서 동시에 컬러도 바꾸려면? 
+        }
+    </script>
+    
+    <h1 onmouseover="changeText2()" id="switch2">Hover mouse on This!!</h1>
+    <script>
+        function changeText2() {
+            // text 내용 변경
+            // document.getElementById("switch").innerHTML = "Good!!";
+
+            // 글자 색상 변경
+            document.getElementById("switch2").style.color = "#ff0000";
+        }
+    </script>
+</body>
+</html>
